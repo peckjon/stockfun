@@ -33,7 +33,7 @@ def main():
 
     # plot
     plt.style.use('default')
-    plt.figure(figsize=(32, 16), dpi=150)
+    plt.figure(figsize=(16, 8), dpi=150)
     for stock in stocks:
       close_pct[stock].plot(label=f'{stock}: {finalpct[stock]}% {close_last[stock].round(2)}+{divsums[stock]}divs')
 
