@@ -27,13 +27,13 @@ jobs:
       run: |
         #python -m pip install --upgrade pip
         pip install -r requirements.txt
+        mkdir -p graphs
     - name: Create plot
       run: python graph_stocks.py
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        mkdir -p graphs
         git add graphs/*.png
         git commit -m "Updated plot" -a
     - name: Push changes
