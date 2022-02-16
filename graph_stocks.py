@@ -40,7 +40,7 @@ def main():
     plt.title('PCT Change')
     plt.xlabel('Date')
     plt.legend()
-    plt.savefig(f'{"_".join(stocks)}.png')
+    plt.savefig(f'graphs/{"_".join(stocks)}.png')
 
 
 if __name__ == "__main__":
