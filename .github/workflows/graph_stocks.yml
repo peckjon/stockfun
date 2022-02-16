@@ -5,6 +5,8 @@ on:
     paths:
     - .github/workflows/graph_stocks.yml
     - stocks.csv
+    - graph_stocks.py
+    - requirements.txt
   workflow_dispatch:
     inputs:
       dummy:
