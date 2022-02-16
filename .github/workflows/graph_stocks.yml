@@ -33,7 +33,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add *.png
+        git add graphs/*.png
         git commit -m "Updated plot" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
